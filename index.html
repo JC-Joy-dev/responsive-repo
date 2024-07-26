@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=https://freedrivemovie.com/genre/adult/, initial-scale=1.0">
+    <title>CSS Grid</title>
+     <!-- CSS STYLE -->
+        <style>
+            .container{
+                display: grid;
+                /* grid-template-columns: repeat(3 , 1fr); */
+                grid-template-columns: repeat(3 , 1fr);
+                gap: 15px;
+            }
+            .container .item-box{
+                border: 1px solid rgb(0, 0, 0);
+                padding: 10px 15px 20px 15px;
+                text-align: center;
+                background: #eeeeee;
+            }
+            .container .item-box img{
+                width: 100%;
+            }
+            .container .item-box .food-name{
+                font-size: 30px;
+                font-weight: 800;
+                margin: 15px 0 0 0 !important;
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+            .container .item-box .food-price {
+                font-size: 20px;
+                font-weight: 700;
+                margin: 15px 0 20px 0 !important;
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+            .container .item-box .food-price::first-letter{
+                text-transform: uppercase;
+            }
+            .container .item-box .food-des{
+                /* text-align: left; */
+                font-size: 18px;
+                font-weight: 400;
+                text-align: justify;
+                margin: 0;
+            }
+
+            /* Responsive */
+            @media screen and (max-width: 576px){
+                .container{
+                display: grid;
+                /* grid-template-columns: repeat(3 , 1fr); */
+                grid-template-columns: repeat(1 , 1fr);
+                /* gap: 15px; */
+            }
+            .container .item-box .food-des{
+                font-size: 20px;
+            }
+            }
+            @media screen and (min-width: 576px) and (max-width: 992px){
+                .container{
+                display: grid;
+                grid-template-columns: repeat(2 , 1fr);
+            }
+
+            }
+            /* Responsive */
+        </style>
+     <!-- CSS STYLE -->
+</head>
+<body>
+    <!-- .container>.item-box*12>img[src="images/burger.avif"]+h3.food-name{Delicious Burger}+p.food-price{price - $00}+p.food-des>lorem20 -->
+    <div class="container">
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias praesentium fugiat numquam iste suscipit molestiae culpa, quas unde asperiores?</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Et molestiae vitae unde fugiat illo impedit ex sed facere ratione dolores tenetur facilis incidunt natus, excepturi provident vel distinctio.</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Voluptate eligendi fuga explicabo, id enim nobis harum fugiat vitae est. Sequi facere exercitationem quos sunt repellat mollitia blanditiis quasi.</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Modi, architecto! Totam quasi impedit dolorum atque, iure pariatur sit tempora voluptas ipsa blanditiis nesciunt illum reprehenderit, error odio inventore!</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Inventore dolorum molestiae pariatur ipsa autem nobis fuga aut voluptates sit illum incidunt, atque nihil cum id. Culpa, ipsa optio!</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Magni dolores reprehenderit alias, molestiae debitis nesciunt eos voluptatibus nostrum sunt recusandae praesentium. Libero id maiores quibusdam, at tempore pariatur.</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Culpa non deserunt neque adipisci beatae soluta commodi numquam, illum explicabo nostrum quidem delectus possimus, sit facilis distinctio id ab!</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Reprehenderit tempore nisi necessitatibus expedita voluptates minima nulla recusandae dolore minus tempora maiores dolores saepe, alias quaerat quidem temporibus architecto?</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Modi odit tempore nobis, ipsa recusandae similique ad repellendus suscipit sapiente dolorum nesciunt hic provident accusamus accusantium natus qui numquam.</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Expedita ullam eius velit doloremque natus iure error modi molestias at rem eum vel, sapiente distinctio nemo hic, atque accusamus.</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Veritatis distinctio autem perferendis laborum quos soluta nostrum exercitationem est, odio corporis accusantium ab voluptates. Consequatur inventore aliquid officia rerum?</p>
+        </div>
+        <div class="item-box">
+            <img src="images/burger.avif" alt="">
+            <h3 class="food-name">Delicious Burger</h3>
+            <p class="food-price">price - 200</p>
+            <p class="food-des">Magnam, cupiditate, maiores illum optio numquam incidunt laudantium veniam fuga unde delectus, a maxime cumque est blanditiis eligendi explicabo aliquam.</p>
+        </div>
+    </div>
+</body>
+</html>
